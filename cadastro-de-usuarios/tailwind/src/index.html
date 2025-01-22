@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="h-screen w-screen grid grid-cols-1 md:grid-cols-2 grid-rows-6">
+        <!--h-screen:ocupa toda a altura da tela-->
+
+        <div class="row-span-5 md:flex justify-end hidden"> 
+            
+            <!--Imagem Principal-->
+            <img class="w-max-96" src="img/insta-img.png" alt="Interface-instagram">
+        </div>
+
+
+
+        <div class="row-span-5 flex flex-col justify-center items-center grid-cols-1"> 
+             <!--Formulário-->
+             <form class="w-80 flex flex-col justify-center items-center border rounded-sm px-10 py-4 gap-5">
+
+                <img class="w-52" src="img/insta-logo.png" alt="">
+
+                <input class="bg-slate-50 h-9 w-full pl-3 border rounded-sm" placeholder="User,Telephone number or E-mail" type="Text">
+
+                <input class="bg-slate-50 h-9 w-full pl-3 border rounded-sm" placeholder="Password" type="text">
+
+                <button class="bg-blue-500 w-full rounded-md h-8 text-slate-50 hover:bg-blue-300">log in</button>
+
+                <a href="#" class="text-blue-800 font-bold cursor-pointer">Log in with Facebook</a>
+                <a href="#" class="text-blue-800 text-sm cursor-pointer">Forgiven your password?</a>
+            </form>
+
+            <div class="border w-80 my-4 text-center py-4">
+                <p>Do not have an account? <a href="#" class="text-blue-500">Sign up!</a></p>
+            </div>
+
+            <p>Download the App</p>
+
+            <div class="flex gap-3 mt-4">
+                <img class="h-10" src="img/apple.png" alt="">
+                <img class="h-10"  src="img/google.png" alt="">
+            </div>
+        </div>
+
+        <!--Rodapé-->
+        <div class="row-span-1 col-span-2">
+            <ul class="flex flex-wrap gap-5 justify-center mt-8">
+    
+                    <li class="text-slate-800 text-sm">Meta</li>
+                    <li class="text-slate-800 text-sm">About</li>
+                    <li class="text-slate-800 text-sm">Blog</li>
+                    <li class="text-slate-800 text-sm">Jobs</li>
+                    <li class="text-slate-800 text-sm">Help</li>
+                    <li class="text-slate-800 text-sm">API</li>
+                    <li class="text-slate-800 text-sm" class="text-slate-800 text-sm">Privacy</li>
+                    <li class="text-slate-800 text-sm">Terms</li>
+                    <li class="text-slate-800 text-sm">Locations</li>
+                    <li class="text-slate-800 text-sm">Instagram Lite</li>
+                    <li class="text-slate-800 text-sm">Threads</li>
+                    <li class="text-slate-800 text-sm">Contact uploading and non-users</li>
+                    <li class="text-slate-800 text-sm">Meta verified</li>
+    
+            </ul>
+
+            <ul class="flex flex-wrap ga-5 justify-center mt-6 ">
+                <li class="text-slate-800">Portuguese(Brazil)</li>
+                <li class="text-slate-800">2024 Instagram Meta Verified</li>
+            </ul>
+        </div>
+
+
+
+
+    </div>
+
+
+
+</body>
+</html>
+
+<!--Flex-wrap-->
+<!--Media query-->
